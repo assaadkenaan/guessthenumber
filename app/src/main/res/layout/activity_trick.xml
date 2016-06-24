@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.ak.number.TrickActivity" >
+
+    <TextView
+        android:id="@+id/txtBestIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Say we are looking for the number 2, we can take 1 as minimum of integral and 10 the max then 5 the middle of our integral" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBestIn"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:src="@drawable/tryone" />
+
+    <TextView
+        android:id="@+id/txtExplainTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:text="If the app say that 5 is superior than the number which we search, so we choose 3 as middle of our new integral and numbers which are superior than 5 we remove it, so 5 is the max of our new integral" />
+
+    <ImageView
+        android:id="@+id/btnTrick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtExplainTwo"
+        android:paddingTop="10dp"
+        android:src="@drawable/trytwo" />
+
+    <TextView
+        android:id="@+id/txtExplainThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTrick"
+        android:text="Same thing here, supposing that the number is always superior than the number wich we search, we conclude finally that 2 is the right number " />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtExplainThree"
+        android:paddingTop="10dp"
+        android:src="@drawable/trythree" />
+
+</RelativeLayout>
